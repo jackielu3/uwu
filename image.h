@@ -26,8 +26,9 @@ class Image {
 
   // Reads the magic number of PPM file.
   MagicNumber ReadMagic(std::ifstream &fppm);
+  
 
- public:
+  public:
   // Constructor
   Image(std::ifstream &fppm);
 
@@ -40,5 +41,6 @@ class Image {
   // Saves the image to a file.
   void Save(std::ofstream &fppm);
 };
+
 
 #endif  // IMAGE_H_
