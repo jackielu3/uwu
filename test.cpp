@@ -8,6 +8,13 @@
 using namespace std;
 
 int main() {
+
+}
+
+
+
+
+  /*
   ifstream fppm ("sled_dog_ascii.ppm");
 
   ofstream outFile ("final_image.ppm");
@@ -40,10 +47,11 @@ int main() {
 //    Image::Save(outFile, pixelLine);
   }
 
+
 }
 
 
-
+*/
 
 
 

@@ -13,7 +13,6 @@ int main(int argc, char *argv[]) {
   }
 
   ifstream file ("sled_dog_ascii.ppm");
-  
 /*
   file.seekg (0, ios::beg);
   MagicNumber test = MagicNumber::kAscii;
@@ -24,27 +23,20 @@ int main(int argc, char *argv[]) {
   }
 */
 
-  
-
   file.clear();
   file.seekg (0, ios::beg);
 
   Image sledDog(file);
 
 
+ 
 
-
-/*  
-  double identity[3][3] = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
+//  double identity[3][3] = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
   double blur[3][3] = {
       {0.0625, 0.125, 0.0625}, {0.125, 0.25, 0.125}, {0.0625, 0.125, .0625}};
 
-*/
-  // TODO: edges
-  // TODO: emboss
-  // TODO: sharpen
+  sledDog.Convolve(blur);
 
-  // TODO: Use image class to read, transform, and save the image.
   int err = EXIT_SUCCESS;
 
   return err;
